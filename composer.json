@@ -13,5 +13,10 @@
             "email": "maxsmakov@gmail.com"
         }
     ],
+	"autoload": {
+    "psr-4": {
+      "BrainGames\\": "src/"
+    }
+},
     "require": {}
 }
