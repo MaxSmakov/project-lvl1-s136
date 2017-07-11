@@ -1,5 +1,5 @@
 {
-    "name": "hexletmax/brain-games",
+    "name": "hexletmax2/brain-games",
     "bin": ["bin/brain-games"],
     "type": "library",
     "require-dev": {
