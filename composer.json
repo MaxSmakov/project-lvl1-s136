@@ -1,0 +1,17 @@
+{
+    "name": "hexlet/brain-games",
+    "bin": ["bin/brain-games"],
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "squizlabs/php_codesniffer": "*",
+        "codeclimate/php-test-reporter": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "MaxSmakov",
+            "email": "maxsmakov@gmail.com"
+        }
+    ],
+    "require": {}
+}
