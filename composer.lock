@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cbf469eeedb76ce44778055c390e054f",
-    "content-hash": "33a0a20cd0f6e8e8c5ce5bb7568f6741",
+    "hash": "e1d542c21ea63808c8f6340641be00b1",
+    "content-hash": "3b614dcab219f80e12e41f9273d8dcf7",
     "packages": [
         {
             "name": "wp-cli/php-cli-tools",
@@ -60,7 +60,7 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
