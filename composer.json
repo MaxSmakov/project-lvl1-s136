@@ -1,7 +1,7 @@
 {
     "name": "maxhexlet/brain-games",
     "type": "library",
-    "bin": ["bin/php-package"],
+    "bin": ["bin/brain-games"],
     "description": "Hexlet project",
     "license": "1",
 	"autoload": {
