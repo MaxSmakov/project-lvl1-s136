@@ -4,7 +4,7 @@
     "bin": ["bin/brain-games"],
     "description": "Hexlet project",
     "license": "1",
-	"autoload": {
+	 "autoload": {
     "files": [
       "src/Cli.php"
     ]
