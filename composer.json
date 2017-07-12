@@ -2,6 +2,8 @@
     "name": "maxhexlet/brain-games",
     "type": "library",
     "bin": ["bin/php-package"],
+    "description": "Hexlet project",
+    "license": "MIT",	
     "require": {
         "wp-cli/php-cli-tools": "^0.11.3"
     },
