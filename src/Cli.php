@@ -3,10 +3,11 @@
 namespace  BrainGames\Cli;
 
 //require_once __DIR__ . '/../php-cli-tools/lib/cli/cli.php';
-function run(){
-  echo 'Welcome to the Brain Game!', PHP_EOL;
-  echo 'May I have your name? ';
+require_once __DIR__ . '/../vendor/autoload.php';
+use function \cli\line;
 
-  $name = trim(fgets(STDIN));
-  echo "Hello, {$name}!", PHP_EOL;
+function run(){
+  line('Welcome to the Brain Game!');
+  $name = \cli\prompt('May I have your name?');
+  line("Hello, %s!", $name);
 }

@@ -1,22 +1,14 @@
 {
-    "name": "hexletmax2/brain-games",
-    "bin": ["bin/brain-games"],
+    "name": "maxhexlet/brain-games",
     "type": "library",
-    "require-dev": {
-        "phpunit/phpunit": "*",
-        "squizlabs/php_codesniffer": "*",
-        "codeclimate/php-test-reporter": "dev-master"
+    "bin": ["bin/php-package"],
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.3"
     },
     "authors": [
         {
             "name": "MaxSmakov",
             "email": "maxsmakov@gmail.com"
         }
-    ],
-	"autoload": {
-    "psr-4": {
-      "BrainGames\\": "src/"
-    }
-},
-    "require": {}
+    ]
 }
