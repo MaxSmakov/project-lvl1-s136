@@ -29,7 +29,7 @@ function runEven()
 
 function checkAnswer($number, $answer)
 {
-    if (($number % 2 === 0 && $answer == "yes") 
+    if (($number % 2 === 0 && $answer == "yes")
         || ($number % 2 != 0 && $answer == "no")
     ) {
         return true;
