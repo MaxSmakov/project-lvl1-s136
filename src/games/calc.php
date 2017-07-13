@@ -40,21 +40,20 @@ function run()
 
 function getAnswer($sign, $num1, $num2)
 {
-     switch($sign) {
-    case '+':
-        return $num1 + $num2;
+    switch ($sign) {
+            case '+':
+            return $num1 + $num2;
             break;
-    case '-':
-        return $num1 - $num2;
+            case '-':
+            return $num1 - $num2;
             break;
-    case '*':
-        return $num1 * $num2;
+            case '*':
+            return $num1 * $num2;
             break;
-}
+     }
 }
 
 function getRandomExpression($sign, $num1, $num2)
 {
     return $num1 . ' ' . $sign . ' ' . $num2;
-
 }

@@ -7,7 +7,7 @@
 ---
 
 ## Installation
-composer require MaxSmakov/brain-games
+composer global require maxhexlet/brain-games
 
 ## Usage
 $ bin/brain-games
