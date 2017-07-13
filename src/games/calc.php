@@ -41,16 +41,16 @@ function run()
 function getAnswer($sign, $num1, $num2)
 {
     switch ($sign) {
-            case '+':
+        case '+':
             return $num1 + $num2;
             break;
-            case '-':
+        case '-':
             return $num1 - $num2;
             break;
-            case '*':
+        case '*':
             return $num1 * $num2;
             break;
-     }
+    }
 }
 
 function getRandomExpression($sign, $num1, $num2)
