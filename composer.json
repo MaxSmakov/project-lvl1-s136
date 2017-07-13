@@ -1,7 +1,8 @@
 {
     "name": "maxhexlet/brain-games",
     "type": "library",
-    "bin": ["bin/brain-games"],
+    "bin": ["bin/brain-games",
+	    "bin/brain-even"],
     "description": "Hexlet project",
     "license": "1",
 	 "autoload": {
