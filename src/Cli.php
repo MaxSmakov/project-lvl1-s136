@@ -16,9 +16,9 @@ const ANSWERS_COUNT = 3;
 
 function runEven()
 {
-  line('Welcome to the Brain Games!');
-  $name = \cli\prompt('May I have your name?');
-  line("Hello, %s", $name);
+    line('Welcome to the Brain Games!');
+    $name = \cli\prompt('May I have your name?');
+    line("Hello, %s", $name);
     for ($i = 1; $i <= ANSWERS_COUNT; $i++) {
         step($name);
     }
@@ -29,9 +29,11 @@ function runEven()
 
 function checkAnswer($number, $answer)
 {
-    if (($number % 2 === 0 && $answer == "yes") || ($number % 2 != 0 && $answer == "no")) {
+    if (($number % 2 === 0 && $answer == "yes") 
+        || ($number % 2 != 0 && $answer == "no")
+    ) {
         return true;
-  }
+    }
     return false;
 }
 
