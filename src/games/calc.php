@@ -9,9 +9,9 @@ const ANSWERS_COUNT = 3;
 function run()
 {
 
-  line('Welcome to the Brain Games!');
-  line('What is the result of the expression?');
-  line();
+    line('Welcome to the Brain Games!');
+    line('What is the result of the expression?');
+    line();
 
     $name = \cli\prompt('May I have your name?');
     line("Hello, %s", $name);
@@ -35,22 +35,22 @@ function run()
         }
     }
 
-    line("Congratulations, %s", $name);    
-  }
+    line("Congratulations, %s", $name);
+}
 
 function getAnswer($sign, $num1, $num2)
 {
      switch($sign) {
-        case '+':
-            return $num1 + $num2;
+    case '+':
+        return $num1 + $num2;
             break;
-        case '-':
-            return $num1 - $num2;
+    case '-':
+        return $num1 - $num2;
             break;
-        case '*':
-            return $num1 * $num2;
+    case '*':
+        return $num1 * $num2;
             break;
-     }
+}
 }
 
 function getRandomExpression($sign, $num1, $num2)
