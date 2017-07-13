@@ -2,12 +2,15 @@
     "name": "maxhexlet/brain-games",
     "type": "library",
     "bin": ["bin/brain-games",
-	    "bin/brain-even"],
+	    "bin/brain-even",
+		"bin/brain-calc"],
     "description": "Hexlet project",
     "license": "1",
 	 "autoload": {
     "files": [
-      "src/Cli.php"
+      "src/Cli.php",
+	"src/games/even.php",
+	"src/games/calc.php"
     ]
   },
     "require": {

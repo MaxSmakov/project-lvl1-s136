@@ -7,4 +7,4 @@
 require_once __DIR__ . '/../src/rightPath.php';
 
 
- \BrainGames\Games\Even\run();
+ \BrainGames\Games\Calc\run();
