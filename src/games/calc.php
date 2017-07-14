@@ -20,14 +20,14 @@ function run()
         list($num1, $sign, $num2) = explode(' ', $purpose);
         switch ($sign) {
             case '+':
-            return $num1 + $num2;
-            break;
+                return $num1 + $num2;
+                break;
             case '-':
-            return $num1 - $num2;
-            break;
+                return $num1 - $num2;
+                break;
             case '*':
-            return $num1 * $num2;
-            break;
+                return $num1 * $num2;
+                break;
         }
     };
     intro(PURPOSE);
