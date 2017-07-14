@@ -3,14 +3,16 @@
     "type": "library",
     "bin": ["bin/brain-games",
 	    "bin/brain-even",
-		"bin/brain-calc"],
+	    "bin/brain-calc",
+	    "bin/brain-gcd"],
     "description": "Hexlet project",
     "license": "1",
 	 "autoload": {
     "files": [
       "src/Cli.php",
 	"src/games/even.php",
-	"src/games/calc.php"
+	"src/games/calc.php",
+	"src/games/gcd.php"
     ]
   },
     "require": {

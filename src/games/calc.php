@@ -2,58 +2,34 @@
 
 namespace BrainGames\Games\Calc;
 
-use function \cli\line;
+use function \Braingames\Cli\intro;
+use function \Braingames\Cli\game;
 
-const ANSWERS_COUNT = 3;
+const PURPOSE = 'What is the result of the expression?';
 
 function run()
 {
-
-    line('Welcome to the Brain Games!');
-    line('What is the result of the expression?');
-    line();
-
-    $name = \cli\prompt('May I have your name?');
-    line("Hello, %s", $name);
-
-    for ($i = 0; $i < ANSWERS_COUNT; $i++) {
+    $problem = function () {
+        $num1 = rand(1, 100);
+        $num2 = rand(1, 100);
         $arrSigns = ['+', '-', '*'];
         $sign = $arrSigns[array_rand($arrSigns)];
-        $number1 = rand(1, 100);
-        $number2 = rand(1, 100);
-
-        $expression = getRandomExpression($sign, $number1, $number2);
-        line('Question: ' . $expression);
-        $answer = \cli\prompt("Your answer is");
-        if ($answer == getAnswer($sign, $number1, $number2)) {
-            line('Correct!');
-            line();
-        } else {
-            line('"%s" is wrong answer', $answer);
-            line("Let's try again, %s!", $name);
-            exit();
-        }
-    }
-
-    line("Congratulations, %s", $name);
-}
-
-function getAnswer($sign, $num1, $num2)
-{
-    switch ($sign) {
+        return "{$num1} {$sign} {$num2}";
+    };
+    $trueAnswer = function ($purpose) {
+        list($num1, $sign, $num2) = explode(' ', $purpose);
+        switch ($sign) {
         case '+':
             return $num1 + $num2;
-            break;
+                break;
         case '-':
             return $num1 - $num2;
-            break;
+                break;
         case '*':
             return $num1 * $num2;
-            break;
-    }
-}
-
-function getRandomExpression($sign, $num1, $num2)
-{
-    return $num1 . ' ' . $sign . ' ' . $num2;
+                break;
+        }
+    };
+    intro(PURPOSE);
+    game($problem, $trueAnswer);
 }

@@ -2,37 +2,24 @@
 
 namespace BrainGames\Games\Even;
 
-use function \cli\line;
+use function \Braingames\Cli\intro;
+use function \Braingames\Cli\game;
 
-const ANSWERS_COUNT = 3;
+const PURPOSE = 'Answer "yes" if number even otherwise answer "no"';
 
 function run()
 {
-    line('Welcome to the Brain Games!');
-    line('Answer "yes" if number even otherwise answer "no".');
-    line();
-
-    $name = \cli\prompt('May I have your name?');
-    line("Hello, %s", $name);
-
-    for ($i = 0; $i < ANSWERS_COUNT; $i++) {
-        $number = rand(1, 100);
-        line('Question: ' . $number);
-        $answer = \cli\prompt("Your answer is");
-        if ($answer == getAnswer($number)) {
-            line('Correct!');
-            line();
-        } else {
-            line('"%s" is wrong answer!', $answer);
-            line("Let's try again, %s!", $name);
-            exit();
-        }
-    }
-
-    line("Congratulations, %s", $name);
+    $problem = function () {
+        return rand(1, 100);
+    };
+    $trueAnswer = function ($num) {
+        return isEven($num) ? "yes": "no";
+    };
+    intro(PURPOSE);
+    game($problem, $trueAnswer);
 }
 
-function getAnswer($num)
+function isEven($number)
 {
-    return $num % 2 == 0 ? "yes" : "no";
+    return $number % 2 == 0 ? true : false;
 }
