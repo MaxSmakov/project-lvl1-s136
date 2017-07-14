@@ -35,7 +35,8 @@ function game($problem, $trueAnswer)
         } else {
             line(
                 "'%s' is wrong answer ;(. Correct answer was '%s'",
-                $userAns, $trueAns
+                $userAns,
+                $trueAns
             );
             line("Let's try again, %s!", $name);
             exit();

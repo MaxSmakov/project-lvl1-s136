@@ -26,7 +26,7 @@ function gcd($num1, $num2)
 {
     $min = ($num1 >= $num2) ? $num2 : $num1;
     if ($min < 1) {
-        return false; 
+        return false;
     }
     $k = 1;
     for ($i = 0; $i < $min; $i++) {

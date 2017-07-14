@@ -33,3 +33,19 @@ function run()
     intro(PURPOSE);
     game($problem, $trueAnswer);
 }
+
+$rightAnswer = function ($question) {
+    list($number1, $sign, $number2) = explode(' ', $question);
+
+    switch ($sign) {
+    case '+':
+        return $number1 + $number2;
+            break;
+    case '-':
+        return $number1 - $number2;
+            break;
+    case '*':
+        return $number1 * $number2;
+            break;
+    }
+};

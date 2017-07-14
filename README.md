@@ -9,5 +9,4 @@
 ## Installation
 composer global require maxhexlet/brain-games
 
-## Usage
-$ bin/brain-games
+
