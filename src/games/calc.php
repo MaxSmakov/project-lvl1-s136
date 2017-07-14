@@ -30,6 +30,5 @@ function run()
                 break;
         }
     };
-    intro(PURPOSE);
-    game($problem, $trueAnswer);
+    game($problem, $trueAnswer, PURPOSE);
 }

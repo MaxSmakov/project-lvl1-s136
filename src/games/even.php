@@ -15,11 +15,10 @@ function run()
     $trueAnswer = function ($num) {
         return isEven($num) ? "yes": "no";
     };
-    intro(PURPOSE);
-    game($problem, $trueAnswer);
+    game($problem, $trueAnswer, PURPOSE);
 }
 
 function isEven($number)
 {
-    return $number % 2 == 0 ? true : false;
+    return $number % 2 == 0;
 }

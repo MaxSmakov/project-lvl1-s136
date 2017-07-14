@@ -18,8 +18,7 @@ function run()
         list($num1, $num2) = explode(' ', $purpose);
         return gcd($num1, $num2);
     };
-    intro(PURPOSE);
-    game($problem, $trueAnswer);
+    game($problem, $trueAnswer, PURPOSE);
 }
 
 function gcd($num1, $num2)

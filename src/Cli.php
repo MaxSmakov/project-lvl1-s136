@@ -20,8 +20,10 @@ function intro($purpose)
     line();
 }
 
-function game($problem, $trueAnswer)
+function game($problem, $trueAnswer, $purpose)
 {
+    intro($purpose);
+
     $name = hello();
 
     for ($i = 0; $i < ANSWERS_COUNT; $i++) {

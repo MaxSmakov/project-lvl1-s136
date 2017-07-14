@@ -4,7 +4,8 @@
     "bin": ["bin/brain-games",
 	    "bin/brain-even",
 	    "bin/brain-calc",
-	    "bin/brain-gcd"],
+	    "bin/brain-gcd",
+	    "bin/brain-balance"],
     "description": "Hexlet project",
     "license": "1",
 	 "autoload": {
@@ -12,7 +13,8 @@
       "src/Cli.php",
 	"src/games/even.php",
 	"src/games/calc.php",
-	"src/games/gcd.php"
+	"src/games/gcd.php",
+	"src/games/balance.php"
     ]
   },
     "require": {
