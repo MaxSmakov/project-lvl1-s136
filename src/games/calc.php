@@ -21,13 +21,13 @@ function run()
         switch ($sign) {
             case '+':
             return $num1 + $num2;
-                break;
+            break;
             case '-':
             return $num1 - $num2;
-                break;
+            break;
             case '*':
             return $num1 * $num2;
-                break;
+            break;
         }
     };
     intro(PURPOSE);
