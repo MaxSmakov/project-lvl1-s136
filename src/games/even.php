@@ -13,12 +13,12 @@ function run()
         return rand(1, 100);
     };
     $trueAnswer = function ($num) {
-        return isEven($num) ? "yes": "no";
+        return isEven($num);
     };
     game($problem, $trueAnswer, PURPOSE);
 }
 
 function isEven($number)
 {
-    return $number % 2 == 0;
+    return $number % 2 == 0 ? "yes": "no";
 }
