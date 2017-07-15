@@ -12,10 +12,10 @@ function run()
     $problem = function () {
         return rand(1, 10000);
     };
-    $trueAnswer = function ($num) {
+    $getTrueAnswer = function ($num) {
         return balance($num);
     };
-    game($problem, $trueAnswer, PURPOSE);
+    game($problem, $getTrueAnswer, PURPOSE);
 }
 
 function balance($n)

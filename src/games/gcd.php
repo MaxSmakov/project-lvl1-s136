@@ -12,10 +12,10 @@ function run()
     $problem = function () {
         return problemF();
     };
-    $trueAnswer = function ($purpose) {
+    $getTrueAnswer = function ($purpose) {
         return trueF($purpose);
     };
-    game($problem, $trueAnswer, PURPOSE);
+    game($problem, $getTrueAnswer, PURPOSE);
 }
 
 function problemF()

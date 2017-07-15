@@ -12,10 +12,10 @@ function run()
     $problem = function () {
         return rand(1, 100);
     };
-    $trueAnswer = function ($num) {
+    $getTrueAnswer = function ($num) {
         return isEven($num);
     };
-    game($problem, $trueAnswer, PURPOSE);
+    game($problem, $getTrueAnswer, PURPOSE);
 }
 
 function isEven($number)

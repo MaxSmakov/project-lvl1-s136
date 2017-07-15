@@ -24,7 +24,7 @@ function game($problem, $trueAnswer, $purpose)
 {
     intro($purpose);
 
-    $name = hello();
+    $name = getName();
 
     for ($i = 0; $i < ANSWERS_COUNT; $i++) {
         $issue = $problem();
@@ -41,13 +41,13 @@ function game($problem, $trueAnswer, $purpose)
                 $trueAns
             );
             line("Let's try again, %s!", $name);
-            exit();
+            break;
         }
     }
     congratulations($name);
 }
 
-function hello()
+function getName()
 {
     $name = \cli\prompt('May I have your name?');
     line("Hello, %s", $name);// hello() in cli.php
