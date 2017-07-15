@@ -40,5 +40,5 @@ function trueF($purpose)
         case '*':
             return $num1 * $num2;
             break;
-  }
+    }
 }
