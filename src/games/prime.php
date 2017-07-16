@@ -13,7 +13,7 @@ function run()
         return rand(1, 100);
     };
     $getTrueAnswer = function ($num) {
-        return isPrime($num);
+        return trueF($num);
     };
     game($problem, $getTrueAnswer, PURPOSE);
 }
@@ -22,8 +22,13 @@ function isPrime($n)
 {
     for ($i = 2; $i != $n; $i++) {
         if (($n % $i == 0 && $n > 2) || !is_int($n) || ($n < 2)) {
-            return "no";
+            return false;
         }
     }
-    return 'yes';
+    return true;
+}
+
+function trueF($num)
+{
+    return isPrime($num) ? "yes" : "no";
 }
