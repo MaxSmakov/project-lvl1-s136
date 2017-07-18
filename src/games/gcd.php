@@ -5,7 +5,7 @@ namespace BrainGames\Games\Gcd;
 use function \Braingames\Cli\intro;
 use function \Braingames\Cli\game;
 
-const PURPOSE = 'Find the greatest common Divisor of given numbers.';
+const PURPOSE = 'Find the greatest common divisor of given numbers.';
 
 function run()
 {
